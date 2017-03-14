@@ -130,6 +130,7 @@ var trivia = {
 
                     if( i === trivia.questionbank.length-1) {
                                       trivia.timer.stop();
+                                       $("#timer").addClass("hidden");
                                        $("#results").removeClass("hidden");
                                        $("#timer").addClass("hidden");
                                        $("#correct-count").text(correctA);
