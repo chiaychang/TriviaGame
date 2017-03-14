@@ -95,17 +95,12 @@ body {
 }*/
 
 #results {
-	position: absolute;
 	background: url(../images/land.jpg); 
-	height:100%;
-	width: 100%;
-	z-index: 6;
-	margin-left: -5%;  
+	z-index: 6; 
 	border-radius: 9px;
 }
 
 #results-card{
-	position: absolute;
 	height: auto;
 	width: 70%;
 	background-color: #D3E3FA;
@@ -113,7 +108,7 @@ body {
 	padding: 60px;
 	border-radius: 8%;
 	margin-top: 5%;
-	margin-left: 18%;
+	margin-left: 15%;
 }
 
 #timer-time {
