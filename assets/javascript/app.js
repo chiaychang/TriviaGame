@@ -51,6 +51,27 @@ var trivia = {
        	  "question": "Who are mainly responsible for collecting water in most developing countries?",
           "options": ["Men","Boys","Women"],
           "answer": "Women"
+      },{
+         "question": "How much percentage of world's population doesn't have access to a toilet?",
+         "options":["33%","25%","70%","2%"],
+         "answer":"33%"
+      },{
+         "question": "What is NOT a country encountering severe water scarcity?",
+         "options": ["India", "Nigeria", "Iran", "Pakistan", "China"],
+         "answer": "Iran"
+      },{
+         "question":"When is United Nations World Water Day?",
+         "options": ["April 22", "March 22", "July 1st", "July 15"],
+         "answer": "March 22"
+      },{
+      
+         "question":"What is the major factor worsening the water scarcity issue today?",
+         "options":["climate change","population growth","urbanization","all of the above"],
+         "answer":"all of the above"
+       },{
+         "question": "More people have a mobile phone than a toilet.",
+         "options": ["True","Flase"],
+         "answer": "True"
        }],
 
 
@@ -89,12 +110,12 @@ var trivia = {
                                         console.log(FinalGuess);
 
                                         if(FinalGuess===FinalAnswer){
-                                          alert("Correct!");
+                                          alert("Correct! Smarty pants! :)");
                                           correctA++;
                                         }
                               
                                          else {
-                                         alert("nope!");
+                                         alert("Wrong! The answer is "+ FinalAnswer);
                                          wrongA++;
 
                                              }
@@ -150,7 +171,7 @@ var trivia = {
       if(time < 0){ 
                          
             trivia.timer.stop();
-            alert("timeout!");
+            alert("Oops! Timeout!");
             unanswerA++;
 
             i++; 
