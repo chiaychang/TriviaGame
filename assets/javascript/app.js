@@ -7,6 +7,7 @@ $("#start-btn").on("click", function(){
 	$("#timer").removeClass("hidden");
 	$("body").removeClass("open-page");
 	$(this).addClass("hidden");
+  $("#intro").empty();
 	$(".timerBar").addClass("timer-start");
 	trivia.game.start();
 });
@@ -133,11 +134,12 @@ var trivia = {
                                        $("#timer").addClass("hidden");
                                        $("#correct-count").text(correctA);
                                        $("#wrong-count").text(wrongA);
-                                       $("#unanswer-count").text(unanswerA); 
+                                       $("#unanswer-count").text(unanswerA);
+                                      
 
                                           $("#again-btn").on("click",function(){
                                                i = 0; 
-                                               $("#results").addClass("hidden");
+                                               $("#game-area").removeClass("hidden");
                                                $("#options").empty();
                                                trivia.game.start();
                                                $("#timer").removeClass("hidden");

@@ -14,9 +14,7 @@ body {
     margin-top: 170px;
     background-size: cover;
 }
-.jumbotron {
-	height: 300px;
-}
+
 
 .page-header {
 	font-size: 37px;
@@ -99,11 +97,11 @@ body {
 #results {
 	position: absolute;
 	background: url(../images/land.jpg); 
-	height:80%;
-	width: 80%;
+	height:100%;
+	width: 100%;
 	z-index: 6;
-	margin-left: 6%;  
-	border-radius: 8px;
+	margin-left: -5%;  
+	border-radius: 9px;
 }
 
 #results-card{
@@ -114,8 +112,8 @@ body {
 	text-align: center;
 	padding: 60px;
 	border-radius: 8%;
-	margin-left: 15%;
 	margin-top: 5%;
+	margin-left: 18%;
 }
 
 #timer-time {
