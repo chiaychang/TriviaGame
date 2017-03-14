@@ -130,17 +130,15 @@ var trivia = {
 
                     if( i === trivia.questionbank.length-1) {
                                       trivia.timer.stop();
-                                       $("#timer").addClass("hidden");
-                                       $("#results").removeClass("hidden");
-                                       $("#timer").addClass("hidden");
-                                       $("#correct-count").text(correctA);
-                                       $("#wrong-count").text(wrongA);
-                                       $("#unanswer-count").text(unanswerA);
-                                      
-
-                                          $("#again-btn").on("click",function(){
+                                        $("#results").removeClass("hidden");
+                                        $("#timer").addClass("hidden");
+                                        $("#correct-count").text(correctA);
+                                        $("#wrong-count").text(wrongA);
+                                        $("#unanswer-count").text(unanswerA); 
+ 
+                                           $("#again-btn").on("click",function(){
                                                i = 0; 
-                                               $("#game-area").removeClass("hidden");
+                                               $("#results").addClass("hidden");
                                                $("#options").empty();
                                                trivia.game.start();
                                                $("#timer").removeClass("hidden");
